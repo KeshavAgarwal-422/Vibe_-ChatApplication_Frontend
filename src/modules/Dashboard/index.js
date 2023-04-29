@@ -22,7 +22,7 @@ const Dashboard = () => {
   const messageRef = useRef(null);
 
   useEffect(() => {
-    setSocket(io.connect("https://vibe-backend.onrender.com:8900"));
+    setSocket(io.connect("https://vibe-backend.onrender.com"));
   }, []);
 
   useEffect(() => {
