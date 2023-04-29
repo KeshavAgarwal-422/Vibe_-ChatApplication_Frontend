@@ -54,7 +54,7 @@ const Form = ({ isSignInPage = true }) => {
               name="name"
               placeholder="Enter your full name"
               className="mb-6 w-[75%]"
-              inputClassName="p-4 border-0 shadow-md rounded-full bg-secondary focus:ring-0 focus:border-0 outline-none text-[#EEEEEE]"
+              inputClassName="p-4 border-0 shadow-md rounded-full bg-secondary focus:ring-0 focus:border-0 outline-none text-white"
               value={data.fullName}
               onChange={(e) => setData({ ...data, fullName: e.target.value })}
             />
@@ -65,7 +65,7 @@ const Form = ({ isSignInPage = true }) => {
             name="email"
             placeholder="Enter your email"
             className="mb-6 w-[75%]"
-            inputClassName="p-4 border-0 shadow-md rounded-full bg-secondary focus:ring-0 focus:border-0 outline-none text-[#EEEEEE]"
+            inputClassName="p-4 border-0 shadow-md rounded-full bg-secondary focus:ring-0 focus:border-0 outline-none text-white"
             value={data.email}
             onChange={(e) => setData({ ...data, email: e.target.value })}
           />
@@ -75,7 +75,7 @@ const Form = ({ isSignInPage = true }) => {
             name="password"
             placeholder="Enter your Password"
             className="mb-14 w-[75%]"
-            inputClassName="p-4 border-0 shadow-md rounded-full bg-secondary focus:ring-0 focus:border-0 outline-none text-[#EEEEEE]"
+            inputClassName="p-4 border-0 shadow-md rounded-full bg-secondary focus:ring-0 focus:border-0 outline-none text-white"
             value={data.password}
             onChange={(e) => setData({ ...data, password: e.target.value })}
           />

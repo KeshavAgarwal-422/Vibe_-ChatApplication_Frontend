@@ -22,7 +22,7 @@ const Dashboard = () => {
   const messageRef = useRef(null);
 
   useEffect(() => {
-    setSocket(io.connect("https://vibe-backend.onrender.com"));
+    setSocket(io("https://vibe-backend.onrender.com"));
   }, []);
 
   useEffect(() => {
@@ -261,7 +261,7 @@ const Dashboard = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="w-[75%]"
-                inputClassName="p-4 border-0 shadow-md rounded-full bg-secondary focus:ring-0 focus:border-0 outline-none text-[#EEEEEE]"
+                inputClassName="p-4 border-0 shadow-md rounded-full bg-secondary focus:ring-0 focus:border-0 outline-none text-white"
               />
               <div
                 className={`ml-4 p-2 cursor-pointer bg-secondary  text-[#EEEEEE] rounded-full ${
